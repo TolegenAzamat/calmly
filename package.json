@@ -1,0 +1,14 @@
+{
+  "name": "calmly",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Voice practice for English speaking situations, built to lower speaking anxiety.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

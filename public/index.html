@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Calmly: practise speaking English without the stress</title>
+  <meta name="description" content="Voice practice for interviews, presentations and everyday conversations, with a patient AI partner and a clear review at the end.">
+  <meta name="theme-color" content="#2c7bd0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <p class="boot">Loading Calmly…</p>
+  </div>
+  <noscript><p class="boot">Calmly needs JavaScript. Please turn it on and reload.</p></noscript>
+  <script type="module" src="/js/main.js"></script>
+  <script>
+    // If the app has not started after a few seconds (blocked CDN, old browser), say so plainly.
+    setTimeout(function () {
+      if (!window.__calmlyReady) {
+        var el = document.querySelector('#app .boot');
+        if (el) el.textContent = 'Calmly could not start. Check your connection and reload, or try a recent version of Chrome or Edge.';
+      }
+    }, 8000);
+  </script>
+</body>
+</html>
